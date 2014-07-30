@@ -1,7 +1,7 @@
 var load = require('..');
 var assert = require('assert');
 
-describe('load-metadata', function () {
+describe('read-metadata', function () {
 
   describe('loading sync', function () {
     it('should load json files', function (done) {

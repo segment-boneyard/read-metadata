@@ -1,6 +1,6 @@
 {
-  "name": "load-metadata",
-  "version": "0.0.1",
+  "name": "read-metadata",
+  "version": "0.0.2",
   "description": "Load a JSON or YAML metadata file as an object",
   "main": "index.js",
   "scripts": {
