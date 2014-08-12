@@ -21,8 +21,7 @@ function readMetadata(path, done) {
     if (err) return done(err);
     var parse = parser(path);
     if (!parse) return done(new Error('Invalid metadata file type.'));
-    var result = parse(data);
-    done(null, result);
+    done(null, parse(data));
   });
 };
 
