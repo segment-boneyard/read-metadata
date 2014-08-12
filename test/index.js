@@ -14,6 +14,11 @@ describe('read-metadata', function () {
       assert.equal(data.name, 'Batman');
       done();
     });
+    it('should load yml files', function (done) {
+      var data = load.sync('test/fixtures/metadata.yml');
+      assert.equal(data.name, 'Batman');
+      done();
+    });
   });
 
   describe('loading async', function () {
@@ -25,6 +30,12 @@ describe('read-metadata', function () {
     });
     it('should load yaml files', function (done) {
       load('test/fixtures/metadata.yaml', function(err, data){
+        assert.equal(data.name, 'Batman');
+        done();
+      });
+    });
+    it('should load yml files', function (done) {
+      load('test/fixtures/metadata.yml', function(err, data){
         assert.equal(data.name, 'Batman');
         done();
       });
