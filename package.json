@@ -6,6 +6,10 @@
   "scripts": {
     "test": "make test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/segment-boneyard/read-metadata.git"
+  },
   "author": "Anthony Short",
   "license": "MIT",
   "dependencies": {
